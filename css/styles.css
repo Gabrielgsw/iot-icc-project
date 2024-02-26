@@ -56,7 +56,7 @@ h2.article-title{
     padding: 0 20px;
 }
 
-.div-cadastro h1{
+.div-cadastro h1,h2{
     color: dodgerblue;
     text-align: center;
     padding: 50px;
