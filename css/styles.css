@@ -1,0 +1,87 @@
+
+.title{
+    color:dodgerblue ;
+    padding: 0 20px;
+    font-size: 1.75em;
+}
+
+.menu ul li a{
+    color:dimgrey;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color:white ;
+    font-family: sans-serif;
+    margin:0;
+}
+
+.capa figure img {
+    width: 100%;
+}
+
+.title-2{
+    color: dodgerblue;
+    padding: 0 20px;
+}
+
+
+body .div-1{
+    background-color: dodgerblue;
+    padding: 20px;
+    color: white;
+}
+
+
+body div .title-3{
+    color: white;
+}
+
+h1.title {
+    margin: 40px auto 20px;
+    padding: 0 20px;
+}
+
+h2.article-title{
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+
+.text-justify{
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.div-cadastro h1{
+    color: dodgerblue;
+    text-align: center;
+    padding: 50px;
+    font-size: xx-large;
+}
+
+
+@media screen and(min-width: 992px) {
+    .capa{
+        width: 40%;
+    }
+
+    main.capa,
+    article.section-video{
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    
+}
+
+.padding-padrao{
+    padding: 0 20px;
+}
+
+.text-center{
+    text-align: center;
+}
