@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 
-.title-2{
+.title-2,.card{
     color: dodgerblue;
     padding: 0 20px;
 }

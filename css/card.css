@@ -1,0 +1,14 @@
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 4px 4px black;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.card > h2 {
+    font-size: 32px;
+    border-left: 6px solid #A9D3E9;
+  }
