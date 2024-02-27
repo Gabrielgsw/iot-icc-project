@@ -1,10 +1,15 @@
-<table>
+<!DOCTYPE html>
+
+<table border="1px solid">
     <tr>
         <th>ID</th>
         <th>Temperatura</th>
         <th>Umidade</th>
     </tr>
     
+    
+    
+
 <?php
 
 $host = '127.0.0.1';
@@ -31,3 +36,13 @@ while($resultado = mysqli_fetch_array($query)){
 }
 ?>
 </table>
+
+<html>
+        <head>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+            <br>
+            <input type="submit" value="Voltar a pagina inicial" onclick="location.href='http://127.0.0.1:5500/Home.html'">
+        </body>
+    </html>
