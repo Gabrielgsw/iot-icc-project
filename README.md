@@ -46,6 +46,8 @@ Mencione as ferramentas que você usou para criar seu projeto
 * [MySQL](https://www.mysql.com/) - Banco de dados utilizado
 * [PHP](https://www.php.net/) - Usado para visualizar os dados do banco
 * [Python](https://www.python.org/) - Usado para conectar o arduino ao banco de dados
+* HTML5 
+* CSS3 
 * [GIT](https://git-scm.com/) - Versionamento do código
 
 ## ✒️ Autores
