@@ -18,7 +18,7 @@ cursor = cnx.cursor()
 ##cursor.execute("INSERT INTO circuito")
 
 add_temp = ("INSERT INTO circuito (temperatura) VALUES (%s)")
-update_temp = ("UPDATE circuito SET (temperatura) = (%s) WHERE id_placa = 1")
+##update_temp = ("UPDATE circuito SET (temperatura) = (%s) WHERE id_placa = 1")
 
 count = 0
 while (True):

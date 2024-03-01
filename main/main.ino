@@ -1,7 +1,7 @@
 #include <math.h>
 #include <Servo.h>
 
-Servo s1,s2,s3,s4;
+Servo s1,s2,s3,s4,s5;
 
 // Constantes do termistor
 #define A   0.00102192985237609
@@ -25,6 +25,7 @@ void setup()
   s2.attach(3);
   s3.attach(4);
   s4.attach(5);
+  s5.attach(6);
 }
 
 void loop()
@@ -32,7 +33,6 @@ void loop()
   float res, temp;
 
   // Mede o pino analógico e converte em resistência
-  // A fórmula está simplificada, mas o passo a passo seria:
   // Converter leitura analógica em tensão -> converter tensão em resistência
   res = RES_SERIE/(1023.0/((float)analogRead(NTC_PIN)) - 1.0);
 
@@ -46,36 +46,69 @@ void loop()
   // Converte de Kelvin para ºC
   temp -= 273.15;
  
-if (isnan(temp)) {    
+  // Verificar se o tipo é numérico
+  if (isnan(temp)) {    
     return;
   }
-
+  Serial.println(temp-10);
   // Imprime o valor
   //Serial.print("Temperatura: ");
   //Serial.print(temp, 2);
   //Serial.println("ºC");
   //sinais = String(temp) + "|";
    //aqui todos os motores vão se movimentar
-  s1.write(180);//movimento do motor
-  s2.write(180);
-  s3.write(180);
-  s4.write(180);
-  delay(500);//faz ele esperar
-  
+ 
+
+  s1.write(60);//movimento do motor
+  s2.write(60);
+  s3.write(60);
+  s4.write(60);
+  s5.write(60);
+  delay(1000);
+  s1.write(60);//movimento do motor
+  s2.write(60);
+  s3.write(60);
+  s4.write(60);
+  s5.write(60);
+  delay(1000);
+  s1.write(60);//movimento do motor
+  s2.write(60);
+  s3.write(60);
+  s4.write(60);
+  s5.write(60);
+  delay(1000);
+  s1.write(60);//movimento do motor
+  s2.write(60);
+  s3.write(60);
+  s4.write(60);
+  s5.write(60);
+  delay(1000);
+  s1.write(60);//movimento do motor
+  s2.write(60);
+  s3.write(60);
+  s4.write(60);
+  s5.write(60);
+  delay(1000);
+  s1.write(60);//movimento do motor
+  s2.write(60);
+  s3.write(60);
+  s4.write(60);
+  s5.write(60);
+  delay(1000);
   //aqui ele volta pra posição inicial
   s1.write(0);
   s2.write(0);
   s3.write(0);
   s4.write(0);
+  s5.write(0);
   delay(500); 
-
   
 
-  Serial.println(temp-10);
+  
   delay(5000);
   
   
-
+  //Acender LED
   if(temp-20 <= 21 ){
     digitalWrite(12, HIGH);
     delay(10000);
